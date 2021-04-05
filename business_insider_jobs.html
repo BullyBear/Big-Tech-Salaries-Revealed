@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Insider: Job Salaries Across Tech Companies</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!--<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href='../static/data/business_insider_jobs/business_insider_jobs.css' rel='stylesheet' type='text/css'>
+
+
+  </head>
+
+
+
+<body>
+
+
+<!--{% block content %}-->
+
+
+<!--<div id="wrapper">-->
+
+
+
+<div id="boxplotContainer">
+
+<div class="boxplotHeader">
+
+<!--
+<p class="boxplotIntro mt-3">If a company does not have data for a specific set of jobs, that company will not be displayed. When only one dot appears for a company, it indicates that there is not enough data to show a full range of salaries</p>
+-->
+
+    <div class="row selectButton">
+        <div class="col-md-4">
+            <h6 id="industry">Select a field:</h6>
+            <div id="industry-dropdown"></div>
+        </div>
+        <div class="col-md-4">
+            <h6 id="category">Select a job type:</h6>
+            <div id="category-dropdown"></div>
+        </div>
+        <div class="col-md-4">
+            <h6 id="smallviz">How to read the chart:</h6>
+            
+            
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 653 247" style="enable-background:new 0 0 653 247;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:#FFFFFF;stroke:#B7B7B7;stroke-width:2;stroke-miterlimit:10;}
+    .st1{fill:#B7B7B7;}
+    .st2{fill:none;stroke:#E6E6E5;stroke-width:2;stroke-miterlimit:10;}
+    .st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st4{fill:#FFADAF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st5{fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
+    .st6{opacity:0.25;}
+    .st7{fill:#FF9400;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st8{fill:#D9D9D9;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st9{fill:#9CACCB;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st10{fill:#95D0A5;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st11{fill:#80BCEC;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st12{fill:#FEFEA8;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st13{fill:#F28A9A;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st14{fill:#80DBF6;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st15{fill:#83CCCD;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st16{fill:#F486C5;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st17{fill:#F18389;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st18{fill:#EB465F;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st19{fill:#FFFFFF;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
+    .st20{opacity:0.25;fill:#FFC980;stroke:#000000;stroke-width:1.7297;stroke-miterlimit:10;}
+    .st21{opacity:0.25;fill:#BFDC80;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st22{fill:#FFC980;stroke:#000000;stroke-width:1.7297;stroke-miterlimit:10;}
+    .st23{fill:#BFDC80;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st24{fill:#FFADAF;}
+    .st25{opacity:0.5;fill:#FFFFFF;}
+    .st26{opacity:0.5;fill:#E6E6E5;}
+    .st27{opacity:0.5;}
+    .st28{fill:none;stroke:#767676;stroke-width:2.2604;stroke-miterlimit:10;}
+    .st29{fill:#231F20;stroke:#969696;stroke-width:11.3022;stroke-miterlimit:10;}
+    .st30{fill:#231F20;}
+    .st31{fill:none;stroke:#969696;stroke-width:7.9115;stroke-miterlimit:10;}
+    .st32{fill:none;stroke:#969696;stroke-width:7.9115;stroke-miterlimit:10;stroke-dasharray:8.0241,8.0241;}
+    .st33{font-family:'LabGrotIns-Medium';}
+    .st34{font-size:32px;}
+    .st35{fill:none;stroke:#231F20;stroke-width:2.2604;stroke-miterlimit:10;}
+</style>
+<g>
+    <line class="st28" x1="104.6" y1="125.5" x2="355.6" y2="125.5"/>
+    <line class="st29" x1="230.1" y1="166.1" x2="230.1" y2="84.8"/>
+    <g>
+        <g>
+            <line class="st31" x1="271.9" y1="166.1" x2="271.9" y2="161.6"/>
+            <line class="st32" x1="271.9" y1="153.6" x2="271.9" y2="93.4"/>
+            <line class="st31" x1="271.9" y1="89.4" x2="271.9" y2="84.8"/>
+        </g>
+    </g>
+    <line class="st28" x1="104.5" y1="111.6" x2="104.5" y2="139.4"/>
+    <line class="st28" x1="355.4" y1="111.6" x2="355.4" y2="139.4"/>
+    <g class="st27">
+        <text transform="matrix(1 0 0 1 31.4429 133.9023)" class="st33 st34">Min.</text>
+    </g>
+    <g class="st27">
+        <text transform="matrix(1 0 0 1 363.5288 134.9023)" class="st33 st34">Max</text>
+    </g>
+    <g class="st27">
+        <text transform="matrix(1 0 0 1 299.9614 210.209)" class="st33 st34">75%</text>
+    </g>
+    <text transform="matrix(1 0 0 1 222.5913 68.8848)" class="st27 st33 st34">Mean</text>
+    <g class="st27">
+        <text transform="matrix(1 0 0 1 104.1235 210.209)" class="st33 st34">25%</text>
+    </g>
+    <g class="st27">
+        <text transform="matrix(1 0 0 1 197.3877 210.209)" class="st33 st34">50%</text>
+    </g>
+    <rect x="131.2" y="85.2" class="st35" width="197.8" height="81.4"/>
+</g>
+<g class="st27">
+    <text transform="matrix(1 0 0 1 466.1152 210.209)" class="st33 st34">Mean only</text>
+</g>
+<circle class="st35" cx="543.2" cy="136.6" r="24.3"/>
+</svg>
+
+
+            
+        </div>
+    </div>
+
+
+
+</div> <!--boxplotHeader-->
+
+
+<div id="boxplot"></div>
+
+</div> <!--BoxPlotContainer-->
+
+
+
+
+<div id=tableContainer>
+
+<div class="tableHeader">
+
+<!--
+<p id="tableIntro" class="mt-3">Each set of jobs is comprised of more specific titles. For instance within Graphic Designer, 
+                   there could be dozens of different titles grouped under it. The first row in this table displays 
+                    the larger category and the remaining rows are all of the job titles that make up that set. </p>
+-->
+
+    <div class="row">
+        <div class="col-md-4">
+            <h6 id="companyTable">Select a company:</h6>
+            <div id="table-company-dropdown"></div>
+        </div>
+        <div class="col-md-4">
+            <h6 id="industryTable">Select a field:</h6>
+            <div id="table-industry-dropdown"></div>
+        </div>
+        <div class="col-md-4">
+            <h6 id="categoryTable">Select a job type:</h6>
+            <div id="table-category-dropdown"></div>
+        </div>
+    </div>
+
+</div> <!--tableHeader-->
+
+
+<div id="table" class="table divScroll">
+    <table class="table">
+        <thead>
+            <tr>
+                <th id="titleTable">Title</th>
+                <th id="countTable">Count</th>
+                <th id="minTable">Min</th>
+                <th id="qoneTable">25th%</th>
+                <th id="medianTable">Median</th>
+                <th id="meanTable">Mean</th> 
+                <th id="qthreeTable">75th%</th>
+                <th id="maxTable">Max</th>
+            </tr>
+        </thead>
+        <tbody class="csv-data-body">
+        </tbody>
+    </table>
+</div>
+
+
+
+</div> <!--tableContainer-->
+
+
+
+<!--</div>--> <!--wrapper-->
+
+<script src="../static/data/business_insider_jobs/table.js"></script>
+
+<script src="../static/data/business_insider_jobs/boxplot.js"></script>
+
+
+<script type="text/javascript">
+
+</script>
+
+
+</body>
+
+</html>
+
+<!--{% endblock %}-->

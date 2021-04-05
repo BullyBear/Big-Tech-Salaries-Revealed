@@ -1,0 +1,415 @@
+
+
+@font-face {
+  font-family: LabGrotesque;
+  src: url('./LabGrotesque-Regular.otf');
+}
+
+
+
+* {
+    font-family: LabGrotesque;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/**:not(.yaxis text) {
+  font-family: LabGrotesque;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+
+
+body {
+  overflow-x:hidden;
+  width:100vw;
+  height:100%;
+
+}
+
+
+
+/* boxPlot */
+
+
+
+#boxplotContainer {
+  
+    margin: 0 100px;
+    margin-top: 50px;
+    width: 90%;
+    height: 1000px;
+}
+
+
+#selectButton {
+  position: absolute;
+  top: 50px;
+  left: 175px;
+}
+
+#industry {
+  top: 10px;
+  left: 175px;
+  font-size: 15px;
+}
+
+#category {
+  top: 10px;
+  left: 500px;
+  font-size: 15px;
+}
+
+#smallviz {
+  top: 10px;
+  left: 900px;
+  font-size: 15px;
+}
+
+#Layer_1 {
+  /*width: 100px;*/
+  width: 140px;
+  top: 18px;
+  position: absolute;
+}
+
+#boxplotIntro {
+  top: 100px;
+  left: 175px;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+#select1 {
+  height: 32px;
+  font-size: 15px;
+}
+
+#select2 {
+  width: 295px;
+  left: 325px;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+#boxplot {
+  position: relative;
+  top: 50;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 50px;
+}
+
+.tooltip {
+  border: 1px solid black;
+}
+
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.yaxis {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+.xaxis {
+  color: grey;
+  font-size: 12px;
+}
+
+
+/* table */
+
+
+#tableContainer {
+    position: relative;
+    margin: 30px 100px;
+    width: 90%;
+}
+
+
+
+#selectButtonTable {
+  position: relative;
+  top: 50px;
+  left: 175px;
+}
+
+
+#companyTable {
+  position: relative;
+  font-size: 15px;
+}
+
+#industryTable {
+  position: relative;
+  font-size: 15px;
+}
+
+#categoryTable {
+  position: relative;
+  font-size: 15px;
+}
+
+
+#select3 {
+  position: relative;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+#select4 {
+  position: relative;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+#select5 {
+  position: relative;
+  height: 32px;
+  font-size: 15px;
+}
+
+
+#tableIntro {
+  position: relative;
+
+}
+
+
+#table {
+  position: relative;
+    width: 100%;
+    margin-top: 30px;
+    overflow-x: scroll;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+
+
+/*
+table {
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+}
+*/
+
+
+
+
+/*
+td, th {
+  padding: 1px 4px;
+  text-align: left;
+}
+*/
+
+
+
+#titleTable {
+  width: 300px;
+  color: grey;
+}
+
+#countTable {
+  color: grey;
+}
+
+#minTable {
+  color: grey;
+}
+
+#qoneTable {
+  color: grey;
+}
+
+#medianTable {
+  color: grey;
+}
+
+#meanTable {
+  color: grey;
+}
+
+#qthreeTable {
+  color: grey;
+}
+
+#maxTable {
+  color: grey;
+}
+
+
+th {
+  background-color: white;
+  color: black;
+  height: 10px;
+  vertical-align: bottom;
+  text-align: left;
+  padding: 1px 4px;
+}
+
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+  text-align: left;
+  padding: 1px 4px;
+}
+
+
+
+tr:hover {background-color: #f5f5f5;}
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+
+tbody tr:first-child td,
+text {
+  font-weight: bold;
+}
+
+
+.divScroll {
+  overflow-y: scroll;
+  width: 10px;
+  height: 500px;
+}
+
+
+.bg-red {
+    background: #e8c3c7;
+}
+
+
+.bg-blue {
+    background: #c9c788;
+}
+
+
+#select1, #select2, #select3, #select4, #select5 {
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 80%;
+  float: left;
+}
+
+
+@media (max-width: 600px) {
+
+    .row {
+      margin-top: -10px;
+    }
+
+    #tableContainer,
+    #boxplotContainer{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #boxplotContainer {
+      margin-top: 0;
+    }
+
+    #tableContainer {
+        margin-top: 50px;
+    }
+    #boxplot {
+      top: 0px
+    }
+    #table {
+      margin-top: 50px;
+    }
+
+    #companyTable {
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    h6{
+      text-align: left;
+    }
+    
+/*    #select1, #select2,
+    #Layer_1, #select3,
+    #select4, #select5 {
+      margin-bottom: 30px;
+      max-width: 100%;
+      float: left;
+    }*/
+
+    #select1, #select2, #select3,
+    #select4, #select5 {
+      margin-bottom: 30px;
+      max-width: 100%;
+      float: left;
+    }
+
+    #Layer_1 {
+      margin-bottom: 30px;
+      /*width: 140px;*/
+      max-width: 100%;
+/*    top: 15px;
+      position: absolute;
+      float: left;
+*/
+      left: 10px;
+
+
+    }
+
+
+    .boxplotIntro
+     {
+      margin-bottom: 0;
+    }
+    #tableIntro {
+      margin-bottom: 50px;
+      top: 100px;
+    }
+
+    .tableHeader .col-md-4,
+    .boxplotHeader .col-md-4 {
+      text-align: center;
+      top: 50px;
+    }
+
+}
+
+
+@media (max-width: 1350px) {
+  #tableContainer,
+  #boxplotContainer{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
+
+/* Add Back In? */
+
+/*@media (max-width: 768px) {
+  #boxplot {
+    margin-top: 0px;
+  }
+}*/
